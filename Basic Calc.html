@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <style>
+    body{
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 50px;
+    }
+    
+      
+
+    
+
+
+
+  </style>
+</head>
+<body>
+  <h2>Calculator</h2>
+
+    <div class="sections">
+    <input id="AddNum1" type="number" placeholder="Enter first number">
+    <input id="AddNum2" type="number" placeholder="Enter second number">
+    <button onclick="add()">Add (+)</button>
+    <p id="resultAdd">Result will appear here</p>
+    </div>
+
+    <br>
+
+   <div class="sections">
+   <input id="SubNum1" type="number" placeholder="Enter first number">
+   <input id="SubNum2" type="number" placeholder="Enter second number">
+   <button onclick="subtract()">Subtract (-)</button>
+   <p id="resultSub">Result will appear here</p>
+   </div>
+
+   <br>
+ 
+   <div class="sections">
+   <input id="MulNum1" type="number" placeholder="Enter first number">
+   <input id="MulNum2" type="number" placeholder="Enter second number">
+   <button onclick="multiply()">Multiply (*)</button>
+   <p id="resultMul">Result will  appear here</p>
+   </div>
+
+
+   <div class="sections">
+   <input id="DivNum1" type="number" placeholder="Enter first number">
+   <input id="DivNum2" type="number" placeholder="Enter second number">
+   <button onclick="divide()">Divide (/)</button>
+   <p id="resultDiv">Result will appear here</p>
+   </div>
+  
+
+  
+  
+  
+  <script>
+    
+    
+    function add() {
+      let a = parseFloat(document.getElementById("AddNum1").value);
+      let b = parseFloat(document.getElementById("AddNum2").value);
+      document.getElementById("resultAdd").textContent = "Result: " + (a + b);
+    }
+
+    function subtract() {
+      let a = parseFloat(document.getElementById("SubNum1").value);
+      let b = parseFloat(document.getElementById("SubNum2").value);
+      document.getElementById("resultSub").textContent = "Result: " + (a - b);
+    }
+
+    function multiply() {
+      let a = parseFloat(document.getElementById("MulNum1").value);
+      let b = parseFloat(document.getElementById("MulNum2").value);
+      document.getElementById("resultMul").textContent = "Result: " + (a * b);
+    }
+
+    function divide() {
+      let a = parseFloat(document.getElementById("DivNum1").value);
+      let b = parseFloat(document.getElementById("DivNum2").value);
+        document.getElementById("resultDiv").textContent = "Result: " + (a / b);
+
+      }
+    
+  </script>
+</body>
+</html>
